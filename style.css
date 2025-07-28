@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f2f7;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.7; /* Optional: adjust brightness */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 550px;
+    border: 1px solid #cce7ed;
+}
+h1 {
+    color: #004d40;
+    margin-bottom: 25px;
+}
+.api-info, .api-last-updated {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+#todayGoldRate {
+    font-weight: bold;
+    color: #d35400;
+}
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+}
+input[type="number"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #b3e0e7;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.results {
+    margin-top: 30px;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 20px;
+    text-align: left;
+}
+.final-price {
+    font-size: 1.3em;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 20px;
+}

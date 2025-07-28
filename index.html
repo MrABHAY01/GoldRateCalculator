@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Rate Calculator (India)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+  <source src="https://videos.pexels.com/video-files/5106444/5106444-hd_1920_1080_25fps.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+  </video>
+
+    <div class="container">
+        <h1>Gold Rate Calculator</h1>
+        <p class="api-info">Live 24K Gold Rate (per gram, India): <span id="todayGoldRate">Loading...</span></p>
+        <p class="api-last-updated">Last Updated: <span id="lastUpdated">N/A</span></p>
+
+        <div class="input-group">
+            <label for="goldWeight">Weight (grams):</label>
+            <input type="number" id="goldWeight" value="10" min="0.1" step="0.1">
+        </div>
+
+        <div class="input-group">
+            <label>Select Carat:</label>
+            <input type="radio" id="carat18" name="carat" value="18" checked>
+            <label for="carat18">18 Carat</label>
+            <input type="radio" id="carat22" name="carat" value="22">
+            <label for="carat22">22 Carat</label>
+            <input type="radio" id="carat24" name="carat" value="24">
+            <label for="carat24">24 Carat</label>
+        </div>
+
+
+
+        <div class="input-group">
+            <label for="gstRate">GST Rate (%):</label>
+            <input type="number" id="gstRate" value="3" min="0" step="0.1">
+        </div>
+
+        <!-- input fields -->
+        <button id="calculateBtn">Calculate Gold Price</button>
+
+        <!-- result section -->
+        <div class="results" style="display: none;">
+
+
+        <div class="results">
+            <h2>Calculated Price Details:</h2>
+            <p><strong>Gold Value (excl. making & GST):</strong> <span id="goldValueOnly">0.00</span> INR</p>
+            <p><strong>Making Charges:</strong> <span id="makingChargesDisplay">0.00</span> INR</p>
+            <p><strong>Subtotal (Gold + Making):</strong> <span id="subtotalPrice">0.00</span> INR</p>
+            <p><strong>GST (<span id="gstPercentDisplay">3</span>%):</strong> <span id="gstAmount">0.00</span> INR</p>
+            <p class="final-price"><strong>Total Payable Price:</strong> <span id="totalPrice">0.00</span> INR</p>
+            <p class="disclaimer">* Prices are indicative. Actual rates may vary.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
